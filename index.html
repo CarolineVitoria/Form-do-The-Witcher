@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/181e07d76d.js" crossorigin="anonymous"></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="div-mae">
+        <header>
+            <div class="div-texto">            <h1>In search of mages</h1>
+            <p>we need powerful mages, the mission will be dangerous, only the brave should apply...</p></div>
+
+            <button class="btn-apply"><a href="#form">Apply</a></button>
+            <div class="div-icons">
+                <i class="fas fa-hat-wizard"></i>
+                <i class="fab fa-wolf-pack-battalion"></i>
+                <i class="fab fa-strava"></i>
+                <i class="fas fa-sun"></i>
+            </div>
+        </header>
+        <main id="form">
+            <form >
+                <input type="text" id="name"placeholder="name" required>
+                <input type="email" id="email" placeholder="email" required>
+                <input type="number" id="number" step="0.01" placeholder="number" size="9">
+                <select name="select" required>
+                    <option value="" selected disabled hidden>Choose your academy</option>
+                    <option>Aretusa</option>
+                    <option>Ban Ard</option>
+                </select>
+                <button>submit</button>
+            </form>
+        </main>
+        <div class="div-enviado">
+            <h1>Done</h1>
+            <p>your information has been sent, we will contact you..</p>
+            <a class="link-fechar"><i class="fas fa-times"></i></a>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

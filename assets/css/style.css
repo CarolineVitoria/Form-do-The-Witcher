@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Dongle&family=Island+Moments&family=MedievalSharp&family=Metamorphous&family=Neonderthaw&family=The+Nautigal:wght@400;700&display=swap');*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+html{
+    
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../img/the-witcher-3-wild-hunt-minimalist-uhdpaper.com-4K-5.1321.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Island Moments', cursive;
+    font-size: 62.5%;
+}
+h1{
+    text-shadow: 0.3rem 0.1rem 0.2rem rgba(0, 0, 0, 0.8);
+}
+.div-mae{
+    width: 65%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+    position: relative;
+}
+header{
+    text-shadow: 0.3rem 0.1rem 0.2rem rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-family: 'The Nautigal', cursive;
+    background-color: transparent;
+    font-size: 2.6rem;
+    width: 50%;
+    color: #ccc;
+    height: 39rem;
+    box-sizing: border-box;
+    padding-top: 10.5rem;
+}
+.div-icons{
+    margin-top: 9.55rem;
+}
+i{
+    color:#e6be3a;
+}
+main form{
+    padding: 3rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    border-left: rgba(0, 0, 0, 0.3) dashed 0.1rem;
+}
+main{
+    background-color: transparent;
+    width: 50%;
+}
+main form input{
+    text-align: center;
+    border-radius: 0.3rem;
+    display: block;
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    border-bottom: whitesmoke solid 0.1rem;
+    font-size: 1.5rem;
+    font-family: 'Almendra', serif;
+}
+::placeholder{
+    font-size: 1.5rem;
+    font-family: 'Almendra', serif;
+    line-height: 0.8rem;
+    
+}
+select{
+    font-family: 'Almendra', serif;
+    font-size: 1.5rem;
+    width: 90%;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.3rem;
+    border-bottom: whitesmoke solid 0.1rem;
+}
+option{
+    font-size: 1rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+button {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Almendra', serif;    
+    border-color: #e6be3a;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #e6be3a inset, 0 0 0 0 #e6be3a;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+
+button:hover {
+    box-shadow: 0 0 10px 0 #e6be3a inset, 0 0 10px 4px #e6be3a;
+}
+.div-enviado{
+    position: absolute;
+    right: 25%;
+    top: 25%;
+    background-color: #071427;
+    width: 50%;
+    border-radius: 0.5rem;
+    height: 50%;
+    text-align: center;
+    color: #d9524e;
+    font-family: 'Almendra', serif;
+    background-image: url(../img/icon3p.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    display: none;
+}
+.link-fechar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.btn-apply{
+    box-shadow: 0 0 40px 40px #d9524e inset, 0 0 0 0 #d9524e;
+    border-color: #d9524e ;
+    display: none;
+}
+.btn-apply:hover{
+    box-shadow: 0 0 10px 0 #d9524e inset, 0 0 10px 4px #d9524e;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+@media (max-width: 1325px){
+    .div-mae{
+        width: 85%;
+    }
+
+}
+@media(max-width: 900px){
+    body{
+        min-height: 100vh;
+        background-size: cover;
+    }
+    .div-mae{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        
+    }
+    h1{
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
+    header{
+        height: 100vh;
+        width: 100%;
+        font-size: 2.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    main{
+        height: 100vh;
+        width: 100%;
+        border: #d9524e 0.2rem solid;
+        border-radius: 0.5rem;
+        color: #e74c3c;
+    }
+    
+    main form{
+        border: none;
+        padding: 0;
+        color: #e74c3c;
+    }
+    .btn-apply{
+        display: block;
+    }
+}
