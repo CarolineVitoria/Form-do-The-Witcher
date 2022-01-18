@@ -190,7 +190,7 @@ a{
         min-height: 100vh;
         background-size: cover;
         background-position: right;
-        background-attachment:scroll;
+        background-attachment:fixed;
     }
     .div-mae{
         flex-direction: column;
