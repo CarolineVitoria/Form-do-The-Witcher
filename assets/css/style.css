@@ -11,7 +11,6 @@ body{
     background-image: url(../img/the-witcher-3-wild-hunt-minimalist-uhdpaper.com-4K-5.1321.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -188,8 +187,9 @@ a{
 @media(max-width: 900px){
     body{
         min-height: 100vh;
-        background-size: cover;
+        background-size: auto;
         background-position: right;
+        background-attachment: fixed;
     }
     .div-mae{
         flex-direction: column;
@@ -216,7 +216,6 @@ a{
     main{
         width: 100%;
         border-radius: 0.5rem;
-        
     }
     .div-icons{
         margin: 0;
