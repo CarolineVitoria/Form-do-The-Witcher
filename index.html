@@ -15,7 +15,7 @@
         <header>
                    <h1>In search of mages</h1>
             <p>we need powerful mages, the mission will be dangerous, only the brave should apply...</p>
-            <p>Evil is evil. Lesser, greater, middling, it’s all the same.</p>
+            <p class="p-mob">Evil is evil. Lesser, greater, middling, it’s all the same.</p>
 
             <button class="btn-apply"><a href="#form">Apply</a></button>
             <div class="div-icons">
@@ -28,8 +28,8 @@
         <main id="form">
             <form >
                 <legend>Form</legend>
-                <input type="text" id="name"placeholder="name" required>
-                <input type="email" id="email" placeholder="email" required>
+                <input type="text" id="name"placeholder="name" autocomplete="off" required>
+                <input type="email" id="email" placeholder="email" autocomplete="off" required>
                 <input type="number" id="number" step="0.01" placeholder="number" size="9">
                 <select name="select" required>
                     <option value="" selected disabled hidden>Choose your academy</option>
