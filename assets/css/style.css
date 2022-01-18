@@ -11,8 +11,8 @@ body{
     background-image: url(../img/the-witcher-3-wild-hunt-minimalist-uhdpaper.com-4K-5.1321.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
-    font-size: 1.7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,6 +188,7 @@ a{
     body{
         min-height: 100vh;
         background-size: cover;
+        background-position: right;
     }
     .div-mae{
         flex-direction: column;
@@ -207,21 +208,34 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        padding-top: 5rem;
     }
     main{
-        height: 100vh;
         width: 100%;
-        border: #d9524e 0.2rem solid;
         border-radius: 0.5rem;
-        color: #e74c3c;
     }
-    
+    .div-icons{
+        display: none;
+    }
     main form{
-        border: none;
+        border:none;
         padding: 0;
-        color: #e74c3c;
+        height: 100vh;
+        margin: 0;
     }
     .btn-apply{
         display: block;
+    }
+    legend{
+        font-size: 3rem;
+    }
+    ::placeholder{
+        color: #e6be3a;
+    }
+    select{
+        color: #e6be3a;
+    }
+    input{
+        color: #e6be3a;
     }
 }
