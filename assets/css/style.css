@@ -216,6 +216,7 @@ a{
     main{
         width: 100%;
         border-radius: 0.5rem;
+        height: 100vh;
         background-color: #071427;
     }
     .div-icons{
@@ -236,8 +237,13 @@ a{
         display: block;
     }
     legend{
+        font-size: 5rem;
+        color: #fff;
+    }
+    main h2{
         font-size: 4rem;
-        
+        color: #fff;
+        text-align: center;
     }
     ::placeholder{
         color: #e6be3a;
