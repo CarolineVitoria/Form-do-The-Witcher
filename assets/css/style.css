@@ -91,6 +91,7 @@ select{
 }
 option{
     font-size: 1rem;
+    text-align: center;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -189,7 +190,7 @@ a{
         min-height: 100vh;
         background-size: cover;
         background-position: right;
-        background-attachment: fixed;
+        background-attachment:scroll;
     }
     .div-mae{
         flex-direction: column;
@@ -209,7 +210,10 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        padding-top: 5rem;
+        padding-top: 4rem;
+    }
+    header div p{
+        margin-top: 3.5rem;
     }
     main{
         width: 100%;
@@ -226,7 +230,7 @@ a{
     main form{
         border:none;
         padding: 0;
-        height: 100vh;
+        height: 90vh;
         margin: 0;
     }
     .btn-apply{
