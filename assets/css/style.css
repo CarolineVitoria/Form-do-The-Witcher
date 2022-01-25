@@ -4,7 +4,6 @@
     outline: none;
 }
 html{
-    
     scroll-behavior: smooth;
 }
 body{
@@ -28,6 +27,7 @@ h1{
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 0.5em;
     position: relative;
+    
 }
 header{
     text-shadow: 0.3rem 0.1rem 0.2rem rgba(0, 0, 0, 0.8);
@@ -136,7 +136,7 @@ button {
 button:hover {
     box-shadow: 0 0 10px 0 #e6be3a inset, 0 0 10px 4px #e6be3a;
 }
-.div-enviado{
+.div-confirmacao{
     position: absolute;
     right: 25%;
     top: 25%;
@@ -152,13 +152,12 @@ button:hover {
     background-repeat: no-repeat;
     background-size: 50%;
     font-size: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     line-height: 1;
+    padding-top: 4rem;
+    box-sizing: border-box;
     display: none;
 }
-.link-fechar{
+.el-fechar{
     position: absolute;
     top: 0;
     right: 0;
@@ -174,15 +173,40 @@ button:hover {
 .btn-apply:hover{
     box-shadow: 0 0 10px 0 #d9524e inset, 0 0 10px 4px #d9524e;
 }
+h2{
+    display: none;
+}
+.p-mob{
+    display: none;
+}
+i:hover{
+    animation-name: tamanho;
+    animation-duration: 1s;
+    
+}
 a{
     text-decoration: none;
     color: #fff;
-}h2{
-    display: none;
+}
+@keyframes tamanho {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 @media (max-width: 1325px){
     .div-mae{
         width: 85%;
+    }
+}
+@media (max-width: 1013px){
+    .div-icons{
+        margin-top: 6.8rem;
     }
 }
 @media(max-width: 900px){
@@ -194,7 +218,7 @@ a{
         width: 100%;
     }
     h1{
-        line-height: 2rem;
+        line-height: 0.8;
         margin: 2.5rem 0;
     }
     header{
@@ -207,6 +231,7 @@ a{
         padding-top: 0;
         background-image: url(../img/the-witcher-3-wild-hunt-minimalist-uhdpaper.com-4K-5.1321.jpg);
         background-position:80% 45%;
+        font-family: 'Almendra', serif;
     }
     main{
         width: 100%;
@@ -220,7 +245,7 @@ a{
         justify-content: space-evenly;
     }
     .p-mob{
-        display: none;
+        display: block;
     }
     main form{
         border:none;
@@ -238,6 +263,7 @@ a{
         font-size: 4rem;
         color: #fff;
         text-align: center;
+        display: block;
     }
     ::placeholder{
         color: #e6be3a;
@@ -247,5 +273,9 @@ a{
     }
     input{
         color: #e6be3a;
+    }
+    header div p{
+        font-family: 'Almendra', serif;
+        font-size: 2rem;
     }
 }
