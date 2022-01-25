@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Dongle&family=Island+Moments&family=MedievalSharp&family=Metamorphous&family=Neonderthaw&family=The+Nautigal:wght@400;700&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Dongle&family=Island+Moments&family=MedievalSharp&family=Metamorphous&family=Neonderthaw&family=The+Nautigal:wght@400;700&display=swap');
+:root{
+    --text-color: #fff;
+    --sun-color: #e6be3a;
+    --sunset-color: #e74c3c;
+    --purple-color: #071427;
+}
+*{
     padding: 0;
     margin: 0;
     outline: none;
@@ -36,7 +43,7 @@ header{
     background-color: transparent;
     font-size: 2.6rem;
     width: 50%;
-    color: #ccc;
+    color: var(--text-color);
     height: 39rem;
     box-sizing: border-box;
     padding-top: 10.5rem;
@@ -176,9 +183,6 @@ button:hover {
 h2{
     display: none;
 }
-.p-mob{
-    display: none;
-}
 i:hover{
     animation-name: tamanho;
     animation-duration: 1s;
@@ -199,6 +203,9 @@ a{
         transform: scale(1);
     }
 }
+@media (prefers-color-scheme: dark) {
+    header { color:  var(--text-color); }
+  }
 @media (max-width: 1325px){
     .div-mae{
         width: 85%;
@@ -216,7 +223,6 @@ a{
         align-items: center;
         background-color: transparent;
         width: 100%;
-        
     }
     h1{
         line-height: 0.8;
@@ -246,9 +252,6 @@ a{
         display: flex;
         justify-content: space-evenly;
     }
-    .p-mob{
-        display: block;
-    }
     main form{
         border:none;
         padding: 0;
@@ -256,10 +259,6 @@ a{
     }
     .btn-apply{
         display: block;
-    }
-    legend{
-        font-size: 5rem;
-        color: #fff;
     }
     main h2{
         font-size: 4rem;
@@ -278,6 +277,6 @@ a{
     }
     header div p{
         font-family: 'Almendra', serif;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
