@@ -216,6 +216,7 @@ a{
         align-items: center;
         background-color: transparent;
         width: 100%;
+        
     }
     h1{
         line-height: 0.8;
@@ -232,6 +233,7 @@ a{
         background-image: url(../img/the-witcher-3-wild-hunt-minimalist-uhdpaper.com-4K-5.1321.jpg);
         background-position:80% 45%;
         font-family: 'Almendra', serif;
+        padding: 0 2rem;
     }
     main{
         width: 100%;
@@ -245,7 +247,7 @@ a{
         justify-content: space-evenly;
     }
     .p-mob{
-        display: block;
+        display: ;
     }
     main form{
         border:none;
