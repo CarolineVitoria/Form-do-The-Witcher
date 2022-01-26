@@ -52,7 +52,7 @@ header{
     margin-top: 9.55rem;
 }
 i{
-    color:#e6be3a;
+    color:var(--sun-color);
 }
 main form{
     padding: 3rem;
@@ -133,36 +133,15 @@ button {
     text-transform: uppercase;
     font-weight: 700;
     font-family: 'Almendra', serif;    
-    border-color: #e6be3a;
+    border-color: var(--sun-color);
     color: #fff;
-    box-shadow: 0 0 40px 40px #e6be3a inset, 0 0 0 0 #e6be3a;
+    box-shadow: 0 0 40px 40px var(--sun-color) inset, 0 0 0 0 var(--sun-color);
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
   }
 
 button:hover {
-    box-shadow: 0 0 10px 0 #e6be3a inset, 0 0 10px 4px #e6be3a;
-}
-.div-confirmacao{
-    position: absolute;
-    right: 25%;
-    top: 25%;
-    background-color: #071427;
-    width: 50%;
-    border-radius: 0.5rem;
-    height: 50%;
-    text-align: center;
-    color: #d9524e;
-    font-family: 'Almendra', serif;
-    background-image: url(../img/icon3p.png);
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    font-size: 2.5rem;
-    line-height: 1;
-    padding-top: 4rem;
-    box-sizing: border-box;
-    display: none;
+    box-shadow: 0 0 10px 0 var(--sun-color) inset, 0 0 10px 4px var(--sun-color);
 }
 .el-fechar{
     position: absolute;
@@ -173,12 +152,12 @@ button:hover {
     cursor: pointer;
 }
 .btn-apply{
-    box-shadow: 0 0 40px 40px #d9524e inset, 0 0 0 0 #d9524e;
-    border-color: #d9524e ;
+    box-shadow: 0 0 40px 40px var(--sunset-color) inset, 0 0 0 0 var(--sunset-color);
+    border-color: var(--sunset-color) ;
     display: none;
 }
 .btn-apply:hover{
-    box-shadow: 0 0 10px 0 #d9524e inset, 0 0 10px 4px #d9524e;
+    box-shadow: 0 0 10px 0 var(--sunset-color) inset, 0 0 10px 4px var(--sunset-color);
 }
 h2{
     display: none;
@@ -192,6 +171,9 @@ a{
     text-decoration: none;
     color: #fff;
 }
+span{
+    display: none;
+}
 @keyframes tamanho {
     0%{
         transform: scale(1);
@@ -204,7 +186,7 @@ a{
     }
 }
 @media (prefers-color-scheme: dark) {
-    header { color:  var(--text-color); }
+    header { color:  #ccc; }
   }
 @media (max-width: 1325px){
     .div-mae{
@@ -251,6 +233,7 @@ a{
         margin: 0;
         display: flex;
         justify-content: space-evenly;
+        padding: 0;
     }
     main form{
         border:none;
@@ -267,16 +250,24 @@ a{
         display: block;
     }
     ::placeholder{
-        color: #e6be3a;
+        color: var(--sun-color);
     }
     select{
-        color: #e6be3a;
+        color: var(--sun-color);
     }
     input{
-        color: #e6be3a;
+        color: var(--sun-color);
     }
-    header div p{
+    .div-texto{
         font-family: 'Almendra', serif;
+        font-size: 1.8rem;
+    }
+
+}@media(max-width: 355px){
+    h1{
+        font-size: 3.7rem;
+    }
+    p{
         font-size: 1.8rem;
     }
 }

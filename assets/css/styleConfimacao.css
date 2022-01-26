@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Dongle&family=Island+Moments&family=MedievalSharp&family=Metamorphous&family=Neonderthaw&family=The+Nautigal:wght@400;700&display=swap');
+:root{
+    --text-color: #fff;
+    --sun-color: #e6be3a;
+    --sunset-color: #e74c3c;
+    --purple-color: #071427;
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/c.jpg);
+    font-family: 'Almendra', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-color);
+}
+h1{
+    font-size: 12rem;
+    text-shadow: 0.3rem 0.3rem 2rem var(--purple-color);
+    animation-name: brilho;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation-name: brilho;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 70vw;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+}
+p{
+    font-size: 5.5rem;
+}
+@keyframes brilho{
+    0%{
+        filter: brightness(100%);
+        transform: scale(1);
+    }
+    100%{
+        filter: brightness(400%);
+        transform: scale(1.1);
+    }
+}
+@-webkit-keyframes brilho{
+    0%{
+        filter: brightness(100%);
+        transform: scale(1);
+    }
+    100%{
+        filter: brightness(400%);
+        transform: scale(1.1);
+    }
+}
+@media (max-height: 500px){
+    main{
+        height: 30rem;
+    }
+    h1{
+        font-size:9rem;
+    }
+    p{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 1000px){
+    h1{
+        font-size: 10rem;
+    }
+    main p{
+        font-size: 4rem;
+    }
+}
+@media (max-width: 500px){
+    h1{
+        font-size: 8rem;
+    }
+    p{
+        font-size: 3rem;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+    }
+}
