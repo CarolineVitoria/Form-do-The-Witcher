@@ -1,10 +1,6 @@
 function form(){
-    const elForm = document.querySelector('form');
-
-    function telaDeConfirmacao(evento){
-        evento.preventDefault();
+    document.querySelector('.bt-enviar').addEventListener('click', function(){
         window.location.href = "./confirmacao.html";
-    }
-    elForm.addEventListener('submit', telaDeConfirmacao);
+    })
 }
 form();
