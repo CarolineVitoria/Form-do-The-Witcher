@@ -271,6 +271,10 @@ span{
     span{
         display: inline;
     }
+    
+@media (prefers-color-scheme: dark) {
+    main   { background:  var(--purple-color); color: white; }
+  }
 
 }@media(max-width: 355px){
     h1{
