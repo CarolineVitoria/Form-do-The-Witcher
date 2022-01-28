@@ -114,9 +114,9 @@ button {
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
-    border: 2px solid #e74c3c;
+    border: 2px solid var(--sunset-color);
     border-radius: 0.6em;
-    color: #e74c3c;
+    color: var(--sunset-color);
     cursor: pointer;
     display: -webkit-box;
     display: -webkit-flex;
@@ -134,7 +134,7 @@ button {
     font-weight: 700;
     font-family: 'Almendra', serif;    
     border-color: var(--sun-color);
-    color: #fff;
+    color: var(--text-color);
     box-shadow: 0 0 40px 40px var(--sun-color) inset, 0 0 0 0 var(--sun-color);
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
@@ -169,7 +169,7 @@ i:hover{
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
 }
 span{
     display: none;
@@ -186,7 +186,7 @@ span{
     }
 }
 @media (prefers-color-scheme: dark) {
-    header { color:  #ccc; }
+    header { color:  var(--text-color); }
   }
 @media (max-width: 1325px){
     .div-mae{
@@ -227,7 +227,7 @@ span{
         width: 100%;
         border-radius: 0.5rem;
         min-height: 100vh;
-        background-color: #071427;
+        background-color: var(--purple-color);
     }
     .div-icons{
         margin: 0;
@@ -245,7 +245,7 @@ span{
     }
     main h2{
         font-size: 4rem;
-        color: #fff;
+        color: var(--text-color);
         text-align: center;
         display: block;
     }
