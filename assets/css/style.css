@@ -193,7 +193,7 @@ span{
         background-color: var(--purple-color);
     }
 }@media (prefers-color-scheme: dark) {
-    main   { background:  var(--sun-color; color: white; }
+    main   { background:  var(--sun-color);color: white; }
   }
 @media (max-width: 1325px){
     .div-mae{
