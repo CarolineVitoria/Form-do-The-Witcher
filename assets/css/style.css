@@ -186,8 +186,11 @@ span{
     }
 }
 @media (prefers-color-scheme: dark) {
-    header { color:  var(--text-color); }
-  }
+    header {
+        color:  var(--text-color);
+        background-color: var(--purple-color);
+    }
+}
 @media (max-width: 1325px){
     .div-mae{
         width: 85%;
@@ -205,6 +208,7 @@ span{
         align-items: center;
         background-color: transparent;
         width: 100%;
+        border-radius: 0;
     }
     h1{
         line-height: 0.8;
@@ -262,6 +266,9 @@ span{
         font-family: 'Almendra', serif;
         font-size: 1.8rem;
     }
+    span{
+        display: inline;
+    }
 
 }@media(max-width: 355px){
     h1{
@@ -269,5 +276,26 @@ span{
     }
     p{
         font-size: 1.8rem;
+    }
+    span{
+        display: none;
+    }
+}
+@media (max-height: 644px)and (min-width: 900px){
+    header{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    .div-icons{
+        display: none;
+    }
+    button{
+        padding: 0.5rem;
+    }
+    main form{
+        padding: 0;
     }
 }
