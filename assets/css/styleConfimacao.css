@@ -104,30 +104,4 @@ p{
        
     }
 }
-@media (prefers-color-scheme: dark) {
-    .efeito{
-        animation-name: brilho;
-        animation-iteration-count: infinite;
-        animation-duration: 1s;
-        animation-direction: alternate;
-        animation-timing-function: ease-in-out;
-        -webkit-animation-name: brilho;
-        text-shadow: 0.2rem 0.2rem 1.5rem var(--sun-color);
-    }
-    @keyframes brilho{
-        0%{
-            filter: brightness(100%);
-        }
-        100%{
-            filter: brightness(200%);
-        }
-    }
-    @-webkit-keyframes brilho{
-        0%{
-            filter: brightness(100%);
-        }
-        100%{
-            filter: brightness(200%);
-        }
-    }
-}
+
