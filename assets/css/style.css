@@ -165,7 +165,6 @@ h2{
 i:hover{
     animation-name: tamanho;
     animation-duration: 1s;
-    
 }
 a{
     text-decoration: none;
@@ -179,11 +178,9 @@ span{
         transform: scale(1);
     }
     50%{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
-    100%{
-        transform: scale(1);
-    }
+
 }
 @media (prefers-color-scheme: dark) {
     header {
